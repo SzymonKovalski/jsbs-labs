@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<script type="text/javascript">
+			'use strict';
+
+			function ages(persons) {
+			    let ages = {};
+			    for (const key in persons) {
+			        const value = persons[key];
+			        ages[key] = value.died - value.born
+			    }
+			    return ages;
+			}
+
+			const persons = { 
+			    guy1: { born: 1893, died: 1976 }, 
+			    guy2: { born: 1869, died: 1948 },
+			    guy3: { born: 1870, died: 1924 }, 
+			    guy4: { born: 1901, died: 1989 }, 
+			};
+
+			console.log(ages(persons));
+
+
+		</script>
+	</body>
+</html>
